@@ -1,10 +1,11 @@
-module github.com/ktr0731/go-fuzzyfinder
+module github.com/steiler/go-fuzzyfinder
 
 require (
 	github.com/gdamore/tcell/v2 v2.13.8
 	github.com/google/go-cmp v0.7.0
 	github.com/google/gofuzz v1.2.0
 	github.com/ktr0731/go-ansisgr v0.1.0
+	github.com/ktr0731/go-fuzzyfinder v0.9.0
 	github.com/mattn/go-runewidth v0.0.20
 	github.com/nsf/termbox-go v1.1.1
 	github.com/pkg/errors v0.9.1

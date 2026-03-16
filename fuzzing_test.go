@@ -15,7 +15,7 @@ import (
 	"github.com/gdamore/tcell/v2"
 
 	fuzz "github.com/google/gofuzz"
-	fuzzyfinder "github.com/ktr0731/go-fuzzyfinder"
+	fuzzyfinder "github.com/steiler/go-fuzzyfinder"
 )
 
 type fuzzKey struct {
@@ -76,8 +76,7 @@ var (
 //
 // Example:
 //
-//   go test -tags fuzz -run TestFuzz -numCases 10 -numEvents 10
-//
+//	go test -tags fuzz -run TestFuzz -numCases 10 -numEvents 10
 func TestFuzz(t *testing.T) {
 	f, err := os.Create(*out)
 	if err != nil {

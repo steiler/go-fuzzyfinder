@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/gdamore/tcell/v2"
-	fuzzyfinder "github.com/ktr0731/go-fuzzyfinder"
+	fuzzyfinder "github.com/steiler/go-fuzzyfinder"
 )
 
 func TestHeaderOverlap(t *testing.T) {
@@ -46,7 +46,7 @@ func TestHeaderOverlap(t *testing.T) {
 	// and item should not overlap it.
 	// Since GetResult returns a string with ANSI codes and newlines, we can split by newline.
 	lines := strings.Split(res, "\n")
-	
+
 	// Helper to strip ANSI codes for easier checking (very basic stripping)
 	strip := func(s string) string {
 		var ret strings.Builder

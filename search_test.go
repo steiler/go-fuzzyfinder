@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/gdamore/tcell/v2"
-	fuzzyfinder "github.com/ktr0731/go-fuzzyfinder"
 	"github.com/pkg/errors"
+	fuzzyfinder "github.com/steiler/go-fuzzyfinder"
 )
 
 func TestFind_WithSearchItemFunc(t *testing.T) {
